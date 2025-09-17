@@ -7,6 +7,10 @@ function sortValue(arr){
   return [...arr].sort((a, b) => a - b)
 }
 
+function sortCharLength(arr){
+  return [...arr].sort((a, b) => a.length - b.length)
+}
+
 //
 function removeDuplicates(arr){
 	const uniqueArr = [arr[0]]
@@ -27,5 +31,4 @@ function removeDuplicates(arr){
 // console.log(sortValue([0,5,1,17,200,2])) 
 // console.log(sortAlphabet(['a','c','b','A','1']))
 //console.log(removeDuplicates(['a','c','b','A','1','1','1','a','c','c','c','c','c','A','c']))
-console.log(removeDuplicates(['1','1','1','3','2','2','3','3','2','1','3']))
-
+console.log(sortCharLength(['Cdjwui','Hej','1','abceeeee','dedede']))
