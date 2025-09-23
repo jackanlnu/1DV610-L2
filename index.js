@@ -28,9 +28,21 @@ function removeDuplicates(arr){
 	return uniqueArr
 }
 
+// Math functions
+function sum(arr) {
+	let arrSum = 0
+	for (let i = 0; i < arr.length; i++) {
+		arrSum += arr[i]
+	}
+	return arrSum
+}
+
+
+// ---- Export ----
 export {
   sortAlphabet,
   sortValue,
   sortCharLength,
-	removeDuplicates
+	removeDuplicates,
+	sum
 }
