@@ -57,6 +57,14 @@ function max(arr) {
 	return arrayMax
 }
 
+function average(arr) {
+	let arrSum = 0
+	for (let i = 0; i < arr.length; i++) {
+		arrSum += arr[i]
+	}
+	return arrSum/arr.length
+}
+
 
 // ---- Export ----
 export {
@@ -66,5 +74,6 @@ export {
 	removeDuplicates,
 	sum,
 	min,
-	max
+	max,
+	average
 }
