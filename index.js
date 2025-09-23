@@ -11,7 +11,7 @@ function sortCharLength(arr){
   return [...arr].sort((a, b) => a.length - b.length)
 }
 
-//
+// Clean up Functions
 function removeDuplicates(arr){
 	const uniqueArr = [arr[0]]
 	for (let i = 0; i < arr.length - 1; i++) {
