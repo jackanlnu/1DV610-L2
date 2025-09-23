@@ -37,6 +37,16 @@ function sum(arr) {
 	return arrSum
 }
 
+function min(arr) {
+	let arrayMin = arr[0]
+	for (let i = 1; i < arr.length; i++) {
+		if(arr[i] < arrayMin) {
+			arrayMin = arr[i]
+		}
+	}
+	return arrayMin
+}
+
 function max(arr) {
 	let arrayMax = arr[0]
 	for (let i = 1; i < arr.length; i++) {
@@ -55,5 +65,6 @@ export {
   sortCharLength,
 	removeDuplicates,
 	sum,
+	min,
 	max
 }
