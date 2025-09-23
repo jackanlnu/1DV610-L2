@@ -37,6 +37,16 @@ function sum(arr) {
 	return arrSum
 }
 
+function max(arr) {
+	let arrayMax = arr[0]
+	for (let i = 1; i < arr.length; i++) {
+		if(arr[i] > arrayMax) {
+			arrayMax = arr[i]
+		}
+	}
+	return arrayMax
+}
+
 
 // ---- Export ----
 export {
@@ -44,5 +54,6 @@ export {
   sortValue,
   sortCharLength,
 	removeDuplicates,
-	sum
+	sum,
+	max
 }
