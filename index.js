@@ -28,6 +28,18 @@ function removeDuplicates(arr){
 	return uniqueArr
 }
 
+function removeFalsy(arr){
+	const cleanArr = [...arr]
+	const falsyList = [null, undefined, 0, false]
+	for(let i = 0; i < cleanArr.length; i++){
+		if(falsyList.includes(cleanArr[i])) {
+			cleanArr.splice(i, 1)
+			i--
+		}
+	}
+	return cleanArr
+}
+
 // Math functions
 function sum(arr) {
 	let arrSum = 0
@@ -72,6 +84,7 @@ export {
   sortValue,
   sortCharLength,
 	removeDuplicates,
+	removeFalsy,
 	sum,
 	min,
 	max,
