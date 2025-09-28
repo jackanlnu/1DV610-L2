@@ -1,3 +1,12 @@
+// Creation Functions
+function createArray(arrayLength){
+	const arr = []
+	for (let i = 1; i <= arrayLength; i++) {
+		arr.push(i)
+	}
+	return arr
+}
+
 // Sorting Functions
 function sortAlphabet(arr){
   return [...arr].sort()
@@ -93,6 +102,7 @@ function average(arr) {
 
 // ---- Export ----
 export {
+	createArray,
   sortAlphabet,
   sortValue,
   sortCharLength,
