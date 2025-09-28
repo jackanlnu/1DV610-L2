@@ -52,6 +52,21 @@ function removeNullUndefined(arr){
 	return cleanArr
 }
 
+/**
+ * @param {Array} arr 
+ * @param {Array} conditions - List of elements that should be removed from the array.
+ */
+function removeElements(arr, conditions){
+	const cleanArr = [...arr]
+	for(let i = 0; i < cleanArr.length; i++){
+		if(conditions.includes(cleanArr[i])) {
+			cleanArr.splice(i, 1)
+			i--
+		}
+	}
+	return cleanArr
+}
+
 // Math functions
 function sum(arr) {
 	let arrSum = 0
