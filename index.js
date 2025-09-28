@@ -20,6 +20,16 @@ function sortCharLength(arr){
   return [...arr].sort((a, b) => a.length - b.length)
 }
 
+function shuffle(arr){
+	const orderedArray = [...arr]
+	const shuffledArray = []
+	while (orderedArray.length > 0){
+		const random = Math.floor(Math.random() * (orderedArray.length))
+		shuffledArray.push(orderedArray.splice(random, 1)[0])
+	}
+	return shuffledArray
+}
+
 // Clean up Functions
 function removeDuplicates(arr){
 	const uniqueArr = [arr[0]]
@@ -106,6 +116,7 @@ export {
   sortAlphabet,
   sortValue,
   sortCharLength,
+	shuffle,
 	removeDuplicates,
 	removeFalsy,
 	removeNullUndefined,

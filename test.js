@@ -7,4 +7,5 @@ import * as helpers from "./index.js"
 
 //console.log(helpers.removeNullUndefined(['a', undefined, undefined,'b','A','1','1','1',null,'c',0,0,'c']))
 
-console.log(helpers.createArray(7))
+const array = helpers.createArray(10)
+console.log(helpers.shuffle(array))
