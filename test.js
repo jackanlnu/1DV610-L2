@@ -7,4 +7,4 @@ import * as helpers from "./index.js"
 
 //console.log(helpers.average([0,5,1,17,20,20])) 
 
-console.log(helpers.removeFalsy(['a', undefined, undefined,'b','A','1','1','1',null,'c',0,0,'c']))
+console.log(helpers.removeNullUndefined(['a', undefined, undefined,'b','A','1','1','1',null,'c',0,0,'c']))

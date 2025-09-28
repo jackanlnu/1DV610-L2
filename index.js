@@ -41,15 +41,8 @@ function removeFalsy(arr){
 }
 
 function removeNullUndefined(arr){
-	const cleanArr = [...arr]
 	const falsyList = [null, undefined]
-	for(let i = 0; i < cleanArr.length; i++){
-		if(falsyList.includes(cleanArr[i])) {
-			cleanArr.splice(i, 1)
-			i--
-		}
-	}
-	return cleanArr
+	return removeElements(arr, falsyList)
 }
 
 /**
