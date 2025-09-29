@@ -119,6 +119,14 @@ function upperCaseAll(arr){
 	return upperCaseArr
 }
 
+function lowerCaseAll(arr){
+	const lowerCaseArr = [...arr]
+	for (let i = 0; i < lowerCaseArr.length; i++) {
+		lowerCaseArr[i] = lowerCaseArr[i].toLowerCase()
+	}
+	return lowerCaseArr
+}
+
 //
 
 /**
@@ -156,5 +164,6 @@ export {
 	max,
 	average,
 	upperCaseAll,
+	lowerCaseAll,
 	checkFrequency
 }

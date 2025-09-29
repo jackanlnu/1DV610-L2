@@ -9,4 +9,4 @@ import * as helpers from "./index.js"
 // console.log(helpers.shuffle(array))
 //console.log(helpers.checkFrequency(['a','c','b','A','1','1','1','a','c','c','c','c','c','A','c']))
 
-console.log(helpers.upperCaseAll(['Cdjwui','Hej','WOw','abceeeee','dedede']))
+console.log(helpers.lowerCaseAll(['Cdjwui','Hej','WOw','abceeeee','dedede']))
