@@ -58,7 +58,8 @@ function removeNullUndefined(arr){
 }
 
 /**
- * @param {Array} arr 
+ * Remove specific elements from the array sent in.
+ * 
  * @param {Array} conditions - List of elements that should be removed from the array.
  */
 function removeElements(arr, conditions){
