@@ -109,6 +109,21 @@ function average(arr) {
 	return arrSum/arr.length
 }
 
+//
+function checkFrequency(arr){
+	const frequencyList = {}
+	const uniqueList = removeDuplicates(arr)
+	for (let i = 0; i < uniqueList.length; i++) {
+		frequencyList[uniqueList[i]] = 0
+	}
+	for (let i = 0; i < arr.length; i++) {
+		if(uniqueList.includes(arr[i])){
+			frequencyList[arr[i]]++
+		}
+	}
+	return frequencyList
+}
+
 
 // ---- Export ----
 export {
@@ -123,5 +138,6 @@ export {
 	sum,
 	min,
 	max,
-	average
+	average,
+	checkFrequency
 }
