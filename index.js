@@ -110,6 +110,15 @@ function average(arr) {
 	return arrSum/arr.length
 }
 
+// String functions
+function upperCaseAll(arr){
+	const upperCaseArr = [...arr]
+	for (let i = 0; i < upperCaseArr.length; i++) {
+		upperCaseArr[i] = upperCaseArr[i].toUpperCase()
+	}
+	return upperCaseArr
+}
+
 //
 
 /**
@@ -146,5 +155,6 @@ export {
 	min,
 	max,
 	average,
+	upperCaseAll,
 	checkFrequency
 }
