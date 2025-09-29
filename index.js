@@ -110,6 +110,12 @@ function average(arr) {
 }
 
 //
+
+/**
+ * Checks how many times each unique element shows up in a array
+ * 
+ * @returns {object} - Object showcasing how many times the elements appear.
+ */
 function checkFrequency(arr){
 	const frequencyList = {}
 	const uniqueList = getUnique(arr)
