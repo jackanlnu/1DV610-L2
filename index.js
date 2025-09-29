@@ -31,7 +31,7 @@ function shuffle(arr){
 }
 
 // Clean up Functions
-function removeDuplicates(arr){
+function getUnique(arr){
 	const uniqueArr = [arr[0]]
 	for (let i = 0; i < arr.length - 1; i++) {
 		let newUnique = true
@@ -112,7 +112,7 @@ function average(arr) {
 //
 function checkFrequency(arr){
 	const frequencyList = {}
-	const uniqueList = removeDuplicates(arr)
+	const uniqueList = getUnique(arr)
 	for (let i = 0; i < uniqueList.length; i++) {
 		frequencyList[uniqueList[i]] = 0
 	}
@@ -132,7 +132,7 @@ export {
   sortValue,
   sortCharLength,
 	shuffle,
-	removeDuplicates,
+	getUnique,
 	removeFalsy,
 	removeNullUndefined,
 	sum,
