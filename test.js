@@ -11,7 +11,7 @@ import * as helpers from "./index.js"
 // console.log(helpers.lowerCaseAll(['Cdjwui','Hej','WOw','abceeeee','dedede']))
 
 
-const array1 = ['owow','cool','B','A','1','22','Eeee']
-const array2 = ['a','c','b','A','1','a','c','c','1','c','22','A','c','c']
+const array1 = ['hi','cool','a','b','1']
+const array2 = ['a','c','b','A','1']
 
-console.log(helpers.similarity(array2, array1))
+console.log(helpers.merge(array1, array2))
