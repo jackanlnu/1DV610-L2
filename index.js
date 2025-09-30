@@ -220,6 +220,17 @@ function difference(arr1, arr2){
 	return differenceArray
 }
 
+function similarity(arr1, arr2) {
+	const similarityArray = []
+	const arrayCopy = getUnique(arr1)
+	for (let i = 0; i < arrayCopy.length; i++) {
+		if(arr2.includes(arrayCopy[i])){
+			similarityArray.push(arrayCopy[i])
+		}
+	}
+	return similarityArray
+}
+
 // Mutation/Transformation Functions
 
 function divide(arr, size) {
@@ -264,5 +275,6 @@ export {
 	nth,
 	merge,
 	difference,
+	similarity,
 	divide
 }
