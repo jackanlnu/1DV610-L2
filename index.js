@@ -41,9 +41,9 @@ function reverse(arr){
 // Clean up Functions
 function getUnique(arr){
 	const uniqueArr = [arr[0]]
-	for (let i = 0; i < arr.length - 1; i++) {
+	for (let i = 0; i < arr.length; i++) {
 		let newUnique = true
-		for (let j = 0; j <= uniqueArr.length - 1; j++) {
+		for (let j = 0; j < uniqueArr.length; j++) {
 			if (arr[i] === uniqueArr[j]) {
 				newUnique = false
 			}
