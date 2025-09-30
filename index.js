@@ -192,6 +192,26 @@ function merge(arr1, arr2) {
 	return newArray
 }
 
+//
+
+function divide(arr, size) {
+	const arrayCopy = [...arr]
+	const dividedArray = []
+	for (let i = 0; i < arrayCopy.length; i += size) {
+		if (i + size < arrayCopy.length){
+			dividedArray.push(arrayCopy.slice(i, i + size))
+		} else {
+			dividedArray.push([])
+			while(i < arrayCopy.length){
+				dividedArray[dividedArray.length - 1].push(arrayCopy[i])
+				i++
+			}
+		}
+		console.log(dividedArray)
+	}
+	return dividedArray
+}
+
 // ---- Export ----
 export {
 	createArray,
@@ -213,5 +233,6 @@ export {
 	checkFrequency,
 	getRandom,
 	getRandomMany,
-	merge
+	merge,
+	divide
 }
