@@ -127,7 +127,7 @@ function lowerCaseAll(arr){
 	return lowerCaseArr
 }
 
-//
+// Search Functions
 
 /**
  * Checks how many times each unique element shows up in a array
@@ -148,6 +148,20 @@ function checkFrequency(arr){
 	return frequencyList
 }
 
+//
+
+/**
+ * Merges two arrays without including duplicates.
+ * 
+ * @param {Array} arr1 
+ * @param {Array} arr2 
+ */
+function merge(arr1, arr2) {
+	let newArray = [arr1, arr2]
+	newArray = getUnique(newArray.flat())
+	return newArray
+}
+
 
 // ---- Export ----
 export {
@@ -165,5 +179,6 @@ export {
 	average,
 	upperCaseAll,
 	lowerCaseAll,
-	checkFrequency
+	checkFrequency,
+	merge
 }

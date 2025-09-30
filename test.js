@@ -7,6 +7,11 @@ import * as helpers from "./index.js"
 
 // const array = helpers.createArray(10)
 // console.log(helpers.shuffle(array))
-//console.log(helpers.checkFrequency(['a','c','b','A','1','1','1','a','c','c','c','c','c','A','c']))
+// console.log(helpers.checkFrequency(['a','c','b','A','1','1','1','a','c','c','c','c','c','A','c']))
+// console.log(helpers.lowerCaseAll(['Cdjwui','Hej','WOw','abceeeee','dedede']))
 
-console.log(helpers.lowerCaseAll(['Cdjwui','Hej','WOw','abceeeee','dedede']))
+
+const array1 = ['owow','cool','B','A','1','22','Eeee']
+const array2 = ['a','c','b','A','1','a','c','c','1','c','22','A','c']
+
+console.log(helpers.merge(array1, array2))
