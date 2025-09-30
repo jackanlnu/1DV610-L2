@@ -184,7 +184,6 @@ function getRandom(arr){
 
 function getRandomMany(arr, amount){
 	const shuffledArray = shuffle([...arr])
-	console.log(shuffledArray)
 	return shuffledArray.slice(0, amount)
 }
 
@@ -213,7 +212,6 @@ function merge(arr1, arr2) {
 function difference(arr1, arr2){
 	const differenceArray = []
 	const arrayCopy = getUnique(arr1)
-	console.log(arrayCopy)
 	for (let i = 0; i < arrayCopy.length; i++) {
 		if(!arr2.includes(arrayCopy[i])){
 			differenceArray.push(arrayCopy[i])
@@ -237,7 +235,6 @@ function divide(arr, size) {
 				i++
 			}
 		}
-		console.log(dividedArray)
 	}
 	return dividedArray
 }
