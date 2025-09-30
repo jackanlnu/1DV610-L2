@@ -39,6 +39,10 @@ function reverse(arr){
 }
 
 // Clean up Functions
+
+/**
+ * Removes duplicates from an array.
+ */
 function getUnique(arr){
 	const uniqueArr = [arr[0]]
 	for (let i = 0; i < arr.length; i++) {
@@ -55,11 +59,17 @@ function getUnique(arr){
 	return uniqueArr
 }
 
+/**
+ * Removes null, undefined, 0, false and empty strings from an array.
+ */
 function removeFalsy(arr){
 	const falsyList = [null, undefined, 0, false, ""]
 	return removeElements(arr, falsyList)
 }
 
+/**
+ * Removes null and undefined from an array.
+ */
 function removeNullUndefined(arr){
 	const falsyList = [null, undefined]
 	return removeElements(arr, falsyList)
@@ -118,7 +128,7 @@ function average(arr) {
 	return arrSum/arr.length
 }
 
-function median (arr) {
+function median(arr) {
   const sortedArray = sortValue([...arr])
   let med
   if (sortedArray.length % 2 !== 0) {
@@ -148,6 +158,9 @@ function lowerCaseAll(arr){
 
 // Search/Info Functions
 
+/**
+ * Gets the postion of the first element that matches the element that's sent in.
+ */
 function search(arr, condition){
 	let position
 	for (let i = 0; i < arr.length; i++) {
@@ -187,6 +200,9 @@ function getRandomMany(arr, amount){
 	return shuffledArray.slice(0, amount)
 }
 
+/**
+ * Gets every nth element. 
+ */
 function nth(arr, n){
 	const nthArray = []
 	for (let i = n - 1; i < arr.length; i += n) {
@@ -199,9 +215,6 @@ function nth(arr, n){
 
 /**
  * Merges two arrays without including duplicates.
- * 
- * @param {Array} arr1 
- * @param {Array} arr2 
  */
 function merge(arr1, arr2) {
 	let newArray = [arr1, arr2]
@@ -209,6 +222,9 @@ function merge(arr1, arr2) {
 	return newArray
 }
 
+/**
+ * Gets every element from the first array that doesn't exist in the second array.
+ */
 function difference(arr1, arr2){
 	const differenceArray = []
 	const arrayCopy = getUnique(arr1)
@@ -220,6 +236,9 @@ function difference(arr1, arr2){
 	return differenceArray
 }
 
+/**
+ * Gets every element that exist in both arrays.
+ */
 function similarity(arr1, arr2) {
 	const similarityArray = []
 	const arrayCopy = getUnique(arr1)
@@ -233,6 +252,9 @@ function similarity(arr1, arr2) {
 
 // Mutation/Transformation Functions
 
+/**
+ * Divides the array into smaller arrays of a specified size.
+ */
 function divide(arr, size) {
 	const arrayCopy = [...arr]
 	const dividedArray = []
