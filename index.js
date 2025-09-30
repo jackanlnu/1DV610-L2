@@ -35,6 +35,12 @@ function getRandom(arr){
 	return [...arr][random]
 }
 
+function getRandomMany(arr, amount){
+	const shuffledArray = shuffle([...arr])
+	console.log(shuffledArray)
+	return shuffledArray.slice(0, amount)
+}
+
 // Clean up Functions
 function getUnique(arr){
 	const uniqueArr = [arr[0]]
@@ -176,6 +182,7 @@ export {
   sortCharLength,
 	shuffle,
 	getRandom,
+	getRandomMany,
 	getUnique,
 	removeFalsy,
 	removeNullUndefined,
