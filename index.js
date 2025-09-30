@@ -188,7 +188,15 @@ function getRandomMany(arr, amount){
 	return shuffledArray.slice(0, amount)
 }
 
-//
+function nth(arr, n){
+	const nthArray = []
+	for (let i = n - 1; i < arr.length; i += n) {
+		nthArray.push([...arr][i])
+	}
+	return nthArray
+}
+
+// Comparing/Altering multiple arrays Functions
 
 /**
  * Merges two arrays without including duplicates.
@@ -202,7 +210,7 @@ function merge(arr1, arr2) {
 	return newArray
 }
 
-//
+// Mutation/Transformation Functions
 
 function divide(arr, size) {
 	const arrayCopy = [...arr]
@@ -220,14 +228,6 @@ function divide(arr, size) {
 		console.log(dividedArray)
 	}
 	return dividedArray
-}
-
-function nth(arr, n){
-	const nthArray = []
-	for (let i = n - 1; i < arr.length; i += n) {
-		nthArray.push([...arr][i])
-	}
-	return nthArray
 }
 
 // ---- Export ----
@@ -252,7 +252,7 @@ export {
 	checkFrequency,
 	getRandom,
 	getRandomMany,
+	nth,
 	merge,
-	divide,
-	nth
+	divide
 }
