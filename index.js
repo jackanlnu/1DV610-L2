@@ -212,6 +212,14 @@ function divide(arr, size) {
 	return dividedArray
 }
 
+function nth(arr, n){
+	const nthArray = []
+	for (let i = n - 1; i < arr.length; i += n) {
+		nthArray.push([...arr][i])
+	}
+	return nthArray
+}
+
 // ---- Export ----
 export {
 	createArray,
@@ -234,5 +242,6 @@ export {
 	getRandom,
 	getRandomMany,
 	merge,
-	divide
+	divide,
+	nth
 }
