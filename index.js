@@ -210,6 +210,18 @@ function merge(arr1, arr2) {
 	return newArray
 }
 
+function difference(arr1, arr2){
+	const differenceArray = []
+	const arrayCopy = getUnique(arr1)
+	console.log(arrayCopy)
+	for (let i = 0; i < arrayCopy.length; i++) {
+		if(!arr2.includes(arrayCopy[i])){
+			differenceArray.push(arrayCopy[i])
+		}
+	}
+	return differenceArray
+}
+
 // Mutation/Transformation Functions
 
 function divide(arr, size) {
@@ -254,5 +266,6 @@ export {
 	getRandomMany,
 	nth,
 	merge,
+	difference,
 	divide
 }
