@@ -121,6 +121,17 @@ function average(arr) {
 	return arrSum/arr.length
 }
 
+function median (arr) {
+  const sortedArray = sortValue([...arr])
+  let med
+  if (sortedArray.length % 2 !== 0) {
+    med = sortedArray[(sortedArray.length - 1) / 2]
+  } else {
+    med = (sortedArray[sortedArray.length / 2 - 1] + sortedArray[sortedArray.length / 2]) / 2
+  }
+  return med
+}
+
 // String functions
 function upperCaseAll(arr){
 	const upperCaseArr = [...arr]
@@ -190,6 +201,7 @@ export {
 	min,
 	max,
 	average,
+	median,
 	upperCaseAll,
 	lowerCaseAll,
 	checkFrequency,

@@ -14,4 +14,4 @@ import * as helpers from "./index.js"
 const array1 = ['owow','cool','B','A','1','22','Eeee']
 const array2 = ['a','c','b','A','1','a','c','c','1','c','22','A','c']
 
-console.log(helpers.getRandomMany(array1, 3))
+console.log(helpers.median([1,2,3,4,5,6,7,8]))
