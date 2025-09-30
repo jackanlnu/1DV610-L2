@@ -146,7 +146,17 @@ function lowerCaseAll(arr){
 	return lowerCaseArr
 }
 
-// Search Functions
+// Search/Info Functions
+
+function search(arr, condition){
+	let position
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] === condition) {
+			position = i
+		}
+	}
+	return position
+}
 
 /**
  * Checks how many times each unique element shows up in a array
@@ -238,6 +248,7 @@ export {
 	median,
 	upperCaseAll,
 	lowerCaseAll,
+	search,
 	checkFrequency,
 	getRandom,
 	getRandomMany,
