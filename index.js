@@ -30,15 +30,12 @@ function shuffle(arr){
 	return shuffledArray
 }
 
-function getRandom(arr){
-	const random = Math.floor(Math.random() * (arr.length))
-	return [...arr][random]
-}
-
-function getRandomMany(arr, amount){
-	const shuffledArray = shuffle([...arr])
-	console.log(shuffledArray)
-	return shuffledArray.slice(0, amount)
+function reverse(arr){
+	const reversed = []
+	for (let i = arr.length - 1; i >= 0; i--) {
+		reversed.push(arr[i])
+	}
+	return reversed
 }
 
 // Clean up Functions
@@ -170,6 +167,17 @@ function checkFrequency(arr){
 	return frequencyList
 }
 
+function getRandom(arr){
+	const random = Math.floor(Math.random() * (arr.length))
+	return [...arr][random]
+}
+
+function getRandomMany(arr, amount){
+	const shuffledArray = shuffle([...arr])
+	console.log(shuffledArray)
+	return shuffledArray.slice(0, amount)
+}
+
 //
 
 /**
@@ -184,17 +192,6 @@ function merge(arr1, arr2) {
 	return newArray
 }
 
-//
-
-function reverse(arr){
-	const reversed = []
-	for (let i = arr.length - 1; i >= 0; i--) {
-		reversed.push(arr[i])
-	}
-	return reversed
-}
-
-
 // ---- Export ----
 export {
 	createArray,
@@ -202,8 +199,7 @@ export {
   sortValue,
   sortCharLength,
 	shuffle,
-	getRandom,
-	getRandomMany,
+	reverse,
 	getUnique,
 	removeFalsy,
 	removeNullUndefined,
@@ -215,6 +211,7 @@ export {
 	upperCaseAll,
 	lowerCaseAll,
 	checkFrequency,
-	merge,
-	reverse
+	getRandom,
+	getRandomMany,
+	merge
 }
