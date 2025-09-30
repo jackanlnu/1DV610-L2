@@ -30,6 +30,11 @@ function shuffle(arr){
 	return shuffledArray
 }
 
+function getRandom(arr){
+	const random = Math.floor(Math.random() * (arr.length))
+	return [...arr][random]
+}
+
 // Clean up Functions
 function getUnique(arr){
 	const uniqueArr = [arr[0]]
@@ -170,6 +175,7 @@ export {
   sortValue,
   sortCharLength,
 	shuffle,
+	getRandom,
 	getUnique,
 	removeFalsy,
 	removeNullUndefined,
