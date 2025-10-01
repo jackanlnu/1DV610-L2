@@ -10,8 +10,8 @@
 
 | Metodnamn | Länk eller kod | Antal rader | Reflektion |
 |---|---|---|---|
-| getUnique(arr) |  | 13 | **Have No Side Effects:** Tar bort dubbletter och ger tillbaka dem unika värdena i arrayen och modifierar inte arrayen på något sätt. | 
-| median(arr) |  | 8 | **Small!:** Är relativt liten. **Have No Side Effects:** Ger medianen av arrayen och modifierar inte arrayen på något sätt.|
-| checkFrequency(arr) |  | 11 | **Structured Programming:** Har bara en return sats. **Use Descriptive Names:** Förklarar att den kollar på frekvensen av element i en array men den borde nog lägga till "get" i börjar så att man vet att den hämtar ut det. |
-| difference(arr1, arr2) |  | 8 | **Small!:** Är relativt liten. |
-| divide(arr, size) |  | 14 | **Dyadic Functions:** Använder sig av två inskickade argument vilket man inte ska försöka göra men i detta fallet går det inte att ha mindre argument. |
+| getUnique(arr) | [![getUnique](imgs/getUnique.png)](imgs/getUnique.png) | 13 | **Have No Side Effects:** Tar bort dubbletter och ger tillbaka dem unika värdena i arrayen och modifierar inte arrayen på något sätt. | 
+| median(arr) | [![getUnique](imgs/median.png)](imgs/median.png) | 8 | **Small!:** Är relativt liten. **Have No Side Effects:** Ger medianen av arrayen och modifierar inte arrayen på något sätt.|
+| checkFrequency(arr) | [![getUnique](imgs/checkFrequency.png)](imgs/checkFrequency.png) | 11 | **Structured Programming:** Har bara en return sats. **Use Descriptive Names:** Förklarar att den kollar på frekvensen av element i en array men den borde nog lägga till "get" i börjar så att man vet att den hämtar ut det. |
+| difference(arr1, arr2) | [![getUnique](imgs/difference.png)](imgs/difference.png) | 8 | **Small!:** Är relativt liten. |
+| divide(arr, size) | [![getUnique](imgs/divide.png)](imgs/divide.png) | 14 | **Dyadic Functions:** Använder sig av två inskickade argument vilket man inte ska försöka göra men i detta fallet går det inte att ha mindre argument. |
