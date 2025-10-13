@@ -1,6 +1,8 @@
-# Kapitel 2 Reflektion
+# Kapitel Reflektioner
 
-Jag känner att jag har lärt mig en hel del av kapitel två. Det har hjälpt mig att få mer kunskap inom att ge bättre namn till variabler, funktioner och klasser.
+Jag känner att jag har lärt mig en hel del av kapitel två och. Det har hjälpt mig att få mer kunskap inom att ge bättre namn till variabler, funktioner och klasser. Och hur man gör mer lättläst och förståeliga kod.
+
+## Kapitel 2 Reflektion
 
 ### Några regler som har hjälpt mig mest är:
 
@@ -45,3 +47,21 @@ function removeScore(){
 }
 ```
 
+## Kapitel 3 Reflektion
+
+### Några regler som har hjälpt mig mest är:
+
+**Small! + Do One Thing:**
+
+Jag sätter ihop de här två för att de kompletterar varandra. För när man bryter ut funktioner för att de ska göra bara en sak brukar det bli små och när man gör en funktion mindre så blir det oftast att man gör flera mindre funktioner för att minska storleken.
+Jag personligen gillar verkligen de här reglerna för att de kompletterar väl med att jag gillar att refaktorera kod och jag kommer definitivt använda mig av de här reglerna i framtiden.
+
+
+**One Level of Abstraction per Function:**
+
+Detta kan jag bryta mot ibland med att ha flera if satser i varandra och/eller flera loopar i varandra. Men jag känner att det är mycket bättre att försöka inte ha flera if satser eller loopar i varandra och jag kommer försöka hålla mig till det.
+
+
+**Have No Side Effects:**
+
+I kod som jag skriver kan det förekomma "Side Effects" då jag i mitt tankesätt tänker att det är självklart att det ska ske flera saker i en funktion som kanske bara genom t.ex namnet förklarar att en av sakerna händer men inte den andra. Ska i framtiden ha bättre namn för funktionen som förklarar allt som händer i den så att det inte finns någon "Side Effects" för att det är då en inräknad funktion. Eller så borde jag bara ta bort det som räknas som en "Side Effect", för att om det räknas som en "Side Effects" så borde det inte vara med i funktionen från första början och borde tas bort.
