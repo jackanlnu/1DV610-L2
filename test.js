@@ -1,4 +1,8 @@
-import * as helpers from "./index.js"
+//import * as helpers from "./index.js"
+import { arrayHelper} from "./index.js";
+
+const helper = new arrayHelper();
+
 
 // console.log(sortValue([0,5,1,17,200,2])) 
 // console.log(sortAlphabet(['a','c','b','A','1']))
@@ -14,4 +18,4 @@ import * as helpers from "./index.js"
 const array1 = ['hi','cool','a','b','1']
 const array2 = ['a','c','b','A','1']
 
-console.log(helpers.merge(array1, array2))
+console.log(helper.merge(array1, array2))

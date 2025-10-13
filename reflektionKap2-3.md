@@ -56,11 +56,9 @@ function removeScore(){
 Jag sätter ihop de här två för att de kompletterar varandra. För när man bryter ut funktioner för att de ska göra bara en sak brukar det bli små och när man gör en funktion mindre så blir det oftast att man gör flera mindre funktioner för att minska storleken.
 Jag personligen gillar verkligen de här reglerna för att de kompletterar väl med att jag gillar att refaktorera kod och jag kommer definitivt använda mig av de här reglerna i framtiden.
 
-
 **One Level of Abstraction per Function:**
 
 Detta kan jag bryta mot ibland med att ha flera if satser i varandra och/eller flera loopar i varandra. Men jag känner att det är mycket bättre att försöka inte ha flera if satser eller loopar i varandra och jag kommer försöka hålla mig till det.
-
 
 **Have No Side Effects:**
 
