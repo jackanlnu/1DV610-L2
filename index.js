@@ -9,7 +9,7 @@ export class arrayHelper{
 	}
 
 	// Sorting Functions
-	sortAlphabet(arr){
+	sortAlphabetically(arr){
 		return [...arr].sort()
 	}
 
@@ -40,11 +40,7 @@ export class arrayHelper{
 	}
 
 	// Clean up Functions
-
-	/**
-	 * Removes duplicates from an array.
-	 */
-	getUnique(arr){
+	removeDuplicates(arr){
 		const uniqueArr = [arr[0]]
 		for (let i = 0; i < arr.length; i++) {
 			let newUnique = true
@@ -68,9 +64,6 @@ export class arrayHelper{
 		return this.removeElements(arr, falsyList)
 	}
 
-	/**
-	 * Removes null and undefined from an array.
-	 */
 	removeNullUndefined(arr){
 		const falsyList = [null, undefined]
 		return this.removeElements(arr, falsyList)

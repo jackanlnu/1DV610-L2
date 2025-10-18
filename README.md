@@ -26,13 +26,13 @@ console.log(helper.createArray(5))
 ```
 ---
 
-sortAlphabet()
+sortAlphabetically()
 
 Sorts the array alphabetically.
 
 ```js
 const array = ['Javascript', 'Good morning', 'Hi']
-console.log(helper.sortAlphabet(array))
+console.log(helper.sortAlphabetically(array))
 // Output: ['Good morning', 'Hi', 'Javascript']
 ```
 ---
@@ -53,7 +53,7 @@ Sorts the array by the elements length.
 
 ```js
 const array = ['Javascript', 'Good morning', 'Hi']
-console.log(helper.sortAlphabet(array))
+console.log(helper.sortCharLength(array))
 // Output: ['Hi', 'Javascript', 'Good morning']
 ```
 ---
@@ -78,12 +78,12 @@ console.log(helper.reverse([1, 2, 3, 4, 5, 6]))
 ```
 ---
 
-getUnique()
+removeDuplicates()
 
-Gets the unique elements from the array.
+Removes duplicates from the array.
 
 ```js
-console.log(helper.getUnique([1, 1, 2, 3, 3, 1, 4, 2]))
+console.log(helper.removeDuplicates([1, 1, 2, 3, 3, 1, 4, 2]))
 // Output: [1, 2, 3, 4]
 ```
 ---
